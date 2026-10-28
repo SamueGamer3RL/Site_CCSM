@@ -1,41 +1,339 @@
+@import url('https://fonts.cdnfonts.com/css/super-mario-256');
+
+/* Faz a lista ficar em linha horizontal */
+.container-barradeselecao ul {
+  display: flex;            /* Ativa o modo flexbox (coloca um do lado do outro) */
+  list-style: none;         /* Remove as bolinhas padrões da lista */
+  padding: 0;               /* Remove espaçamentos extras */
+  margin: 0;
+  margin-bottom: 50px;
+  gap: 25px;                /* Controla o espaço de separação entre os botões */
+  justify-content: center;  /* Centraliza o menu na tela (mude para flex-start se quiser na esquerda) */
+}
+
+/* Estilização opcional para os links parecerem botões como na imagem */
+.container-barradeselecao a {
+  text-decoration: none;    /* Remove o sublinhado azul padrão */
+  background-color: #0b0705;
+  color: #dcb484;
+  padding: 10px 20px;       /* Espaçamento interno do botão */
+  font-family: 'Super Mario 256', sans-serif; 
+  font-weight: bold;        /* Deixa o texto em negrito */
+  border-radius: 5px;       /* Bordas levemente arredondadas */
+  border: 2px solid #c49a6c;/* Borda escura para dar profundidade */
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;/* Deixa o texto em caixa alta (INÍCIO, WIKI...) */
+  transition: background 0.2s;
+}
+
+/* Efeito ao passar o mouse por cima do botão */
+.container-barradeselecao a:hover {
+  background-color: #0066cc;/* Azul mais claro no hover */
+}
+
+/* --------------- Parte de seleção do projeto, acima ----------------*/
+
+body {
+  background-image: url('Imagens-Site/zeldinha.webp'); /* Define a cor de fundo como preto */
+  background-size: cover; /* Centraliza a imagem na tela */
+  background-repeat: no-repeat;
+  color: #ffffff;       /* Define a cor padrão do texto como branco */         
+  padding: 0;
+  
+}
+
+#logo-jogo{
+    width: 4%;           /* Define o tamanho do logo na tela (ajuste como preferir) */
+    height: auto;
+}
+
+/* --------------- Deixar fundo preto ------------------------------*/
+
 h1 {
-    text-align: center;
-    color: #fd0303; /* Um tom de laranja/vermelho */
+   background-color: #8b251e; 
+    color: #ffffff;
+    border: 3px solid #c49a6c;
+    padding: 15px 40px;        
+    font-size: 2rem;           
+    font-family: 'Super Mario 256', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8); 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    text-align: center;        
+    display: block;            /* Transforma em bloco para aceitar as margens laterais */
+    width: max-content;        /* Faz o bloco ter o tamanho exato do texto */
+    margin: 20px auto;
+
 }
 
 h2 {
+    font-family: 'Courier New'; 
     text-align: center; /* centraliza o texto */
-    color: #fd0303d0
+    color: white;
+    background-color: #c49a6c;
+    border: 5px solid #474141; 
+    width: max-content;         /* Faz o fundo azul ter o tamanho exato do texto */
+    margin: 0 auto 50px auto;   /* Centraliza o H1 na tela e deixa 50px de espaço abaixo */
+    padding: 12px 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8); 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.7);
 }
 
 h3 {
-    text-align: center;
+    font-family: 'Courier New'; 
+    text-align: center; /* centraliza o texto */
+    color: white;
+    background-color: #c49a6c;
+    border: 5px solid #474141; 
+    width: max-content;         /* Faz o fundo azul ter o tamanho exato do texto */
+    margin: 0 auto 50px auto;   /* Centraliza o H1 na tela e deixa 50px de espaço abaixo */
+    padding: 12px 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8); 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+}
+
+.destaque-doors {
+        color: #000000; /* O mesmo vermelho-escuro do seu título principal */
+    font-weight: bold; /* Deixa a palavra um pouco mais grossa para destacar (opcional) */
 }
 
 
+.container-botao {
+    display: flex;
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    margin-bottom: 20px;     /* Cria o espaço entre o botão e a imagem de baixo */
+}
+
+.texto-1 {
+    text-align: center; /* Isso vai centralizar o texto na tela */
+    margin-bottom: 15px;
+}
+
+
+.bloco-imagens {
+    display: flex;
+    flex-direction: row;       /* Deixa os dois quadrados lado a lado */
+    justify-content: center;   /* Centraliza o conjunto na tela */
+    gap: 30px;                 /* Cria um espaço de 30px entre um quadrado e o outro */
+    margin: 20px auto;         /* Dá espaço acima e abaixo dos blocos */
+}
 
 .container1 {
     display: flex;
-    justify-content: center; /* Alinha a imagem no centro horizontal */
-    align-items: center;     /* Alinha no centro vertical */
+    width: max-content;         
+    background-color: #8b251e; 
+    border: 3px solid #c49a6c;  
+    padding: 6px;               /* O espaço vermelho ao redor de cada foto */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    justify-content: center;   
+    align-items: center;       
 }
 
-#img1 {
-    width: 30%;       /* Define a largura da imagem */
-    height: auto;      /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Exemplo: deixa as bordas arredondadas */
-    margin-bottom: 20px; /* Cria um espaço de 20 pixels abaixo da imagem */
+#img1, #img1-2 {
+    width: 450px;       /* Mantém a largura padrão para ambas */
+    height: 280px;      /* CORREÇÃO: Força as duas imagens a terem a mesma altura exata */
+    object-fit: cover;  /* MÁGICA: Corta as sobrinhas da imagem mais esticada para preencher a moldura sem distorcer */
+    display: block;     /* Elimina frestas vermelhas na parte inferior */
+    border-radius: 0;   
+}
+
+/* ----------------------------------------PROXIMAS IMAGENS-------------------------------------------- */
+
+.bloco-imagens-2 {
+    display: flex;
+    flex-direction: row;       /* Deixa os dois quadrados lado a lado */
+    justify-content: center;   /* Centraliza o conjunto na tela */
+    gap: 30px;                 /* Cria um espaço de 30px entre um quadrado e o outro */
+    margin: 20px auto;         /* Dá espaço acima e abaixo dos blocos */
 }
 
 .container2 {
     display: flex;
-    justify-content: center; /* Alinha a imagem no centro horizontal */
-    align-items: center;     /* Alinha no centro vertical */
+    width: max-content;         
+    background-color: #8b251e; 
+    border: 3px solid #c49a6c;  
+    padding: 6px;               /* O espaço vermelho ao redor de cada foto */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    justify-content: center;   
+    align-items: center;       
 }
 
-#img2 {
-    width: 30%;       /* Define a largura da imagem */
-    height: auto;      /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Exemplo: deixa as bordas arredondadas */
-    margin-top: 20px; /* Cria um espaço de 20 pixels acima desta imagem */
+#img2, #img2-3 {
+    width: 450px;       /* Mantém a largura padrão para ambas */
+    height: 280px;      /* CORREÇÃO: Força as duas imagens a terem a mesma altura exata */
+    object-fit: cover;  /* MÁGICA: Corta as sobrinhas da imagem mais esticada para preencher a moldura sem distorcer */
+    display: block;     /* Elimina frestas vermelhas na parte inferior */
+    border-radius: 0;   
+}
+
+/* ----------------------------------------BOTÃO DE JOGAR-------------------------------------------- */
+
+#botaosalvar{
+  background-color: #8b251e; /* Um vermelho escuro de alerta/perigo comum no DOORS */
+    color: #ffffff;
+    border: 3px solid #c49a6c;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-family: 'Super Mario 256', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* Sombra no texto */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    transition: transform 0.2s, background-color 0.2s;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#botaosalvar:hover {
+  background-color: #af885f; /* Escurece um pouco o verde quando o mouse passa por cima */
+  transform: scale(1.05);
+}
+
+/* ---------------------------------------- PARTE 2 WIKI -------------------------------------------- */
+
+.container-creak {
+    display: flex;       /* Alinha a imagem e a div de conteúdo lado a lado */
+    gap: 20px;          /* Cria um espaço entre a imagem e o texto */
+    align-items: top;   /* Alinha o topo da imagem com o topo do texto */
+    background-color: #1a0f0a; /* Cor de fundo do cartão */
+    border: 3px solid #c49a6c;  /* Borda dourada do cartão */
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.container-creak p {
+    font-family: 'Super Mario 256', sans-serif;    
+}
+
+.container-creak li {
+    font-family: 'Times New Roman';
+    text-transform: none; /* Garante que o texto não fique todo em maiúsculas */
+}
+
+#imgcreak {
+    width: 300px;       /* Define uma largura fixa padrão para a imagem */
+    height: auto;       /* Mantém a proporção da imagem */
+    object-fit: cover;  /* Garante que a imagem não fique distorcida */
+}
+
+.conteudo-creak h2 {
+    font-family: 'Super Mario 256', sans-serif;
+    background-color: #c49a6c; /* O fundo verde do bloco */
+    color: #ffffff;            /* Texto branco */
+    padding: 10px 20px;        /* Espaçamento interno para criar a caixinha */
+    display: inline-block;;    /* Faz a caixinha abraçar apenas o tamanho do texto */
+    text-align: center;
+    margin: 0 auto 20px auto;  /* Centraliza e joga um espaço para baixo */
+}
+
+.container-creak .jumpscare-creak {
+    text-decoration: none;
+    font-family: 'Super Mario 256', sans-serif;
+    background-color: #e63030; /* O fundo verde do bloco */
+    color: #ffffff;            /* Texto branco */
+    padding: 10px 20px;        /* Espaçamento interno para criar a caixinha */
+    display: inline-block;;    /* Faz a caixinha abraçar apenas o tamanho do texto */
+    text-align: center;
+    margin: 0 auto 20px auto;  /* Centraliza e joga um espaço para baixo */
+}
+
+/* ----------- 2 entidade: -------------- */
+
+.container-ransom {
+    display: flex;       /* Alinha a imagem e a div de conteúdo lado a lado */
+    gap: 20px;          /* Cria um espaço entre a imagem e o texto */
+    align-items: top;   /* Alinha o topo da imagem com o topo do texto */
+    background-color: #1a0f0a; /* Cor de fundo do cartão */
+    border: 3px solid #c49a6c;  /* Borda dourada do cartão */
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.container-ransom p {
+    font-family: 'Super Mario 256', sans-serif;    
+}
+
+.container-ransom li {
+    font-family: "Times New Roman";
+}
+
+#imgransom {
+    width: 300px;       /* Define uma largura fixa padrão para a imagem */
+    height: auto;       /* Mantém a proporção da imagem */
+    object-fit: cover;  /* Garante que a imagem não fique distorcida */
+}
+
+.conteudo-ransom h2 {
+    font-family: 'Super Mario 256', sans-serif;
+    background-color: #c49a6c; /* O fundo verde do bloco */
+    color: #ffffff;            /* Texto branco */
+    padding: 10px 20px;        /* Espaçamento interno para criar a caixinha */
+    display: inline-block;;    /* Faz a caixinha abraçar apenas o tamanho do texto */
+    text-align: center;
+    margin: 0 auto 20px auto;  /* Centraliza e joga um espaço para baixo */
+}
+
+.container-ransom .jumpscare-ransom {
+    text-decoration: none;
+    font-family: 'Super Mario 256', sans-serif;
+    background-color: #e63030; /* O fundo verde do bloco */
+    color: #ffffff;            /* Texto branco */
+    padding: 10px 20px;        /* Espaçamento interno para criar a caixinha */
+    display: inline-block;;    /* Faz a caixinha abraçar apenas o tamanho do texto */
+    text-align: center;
+    margin: 0 auto 20px auto;  /* Centraliza e joga um espaço para baixo */
+}
+
+.container-ransom .jumpscare-ransom:hover {
+  background-color: #721009; /* Escurece um pouco o verde quando o mouse passa por cima */
+  transform: scale(1.05);
+}
+/* ---------- 3 entidade ----------- */
+
+.container-hijack {
+    display: flex;       /* Alinha a imagem e a div de conteúdo lado a lado */
+    gap: 20px;          /* Cria um espaço entre a imagem e o texto */
+    align-items: top;   /* Alinha o topo da imagem com o topo do texto */
+    background-color: #1a0f0a; /* Cor de fundo do cartão */
+    border: 3px solid #c49a6c;  /* Borda dourada do cartão */
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.container-hijack p {
+    font-family: 'Super Mario 256', sans-serif;    
+}
+
+.container-hijack li {
+    font-family: "Times New Roman";
+}
+
+#imghijack {
+    width: 300px;       /* Define uma largura fixa padrão para a imagem */
+    height: auto;       /* Mantém a proporção da imagem */
+    object-fit: cover;  /* Garante que a imagem não fique distorcida */
+}
+
+.conteudo-hijack h2 {
+    font-family: 'Super Mario 256', sans-serif;
+    background-color: #c49a6c; /* O fundo verde do bloco */
+    color: #ffffff;            /* Texto branco */
+    padding: 10px 20px;        /* Espaçamento interno para criar a caixinha */
+    display: inline-block;;    /* Faz a caixinha abraçar apenas o tamanho do texto */
+    text-align: center;
+    margin: 0 auto 20px auto;  /* Centraliza e joga um espaço para baixo */
+}
+
+.container-hijack .jumpscare-hijack {
+    text-decoration: none;
+    font-family: 'Super Mario 256', sans-serif;
+    background-color: #e63030; /* O fundo verde do bloco */
+    color: #ffffff;            /* Texto branco */
+    padding: 10px 20px;        /* Espaçamento interno para criar a caixinha */
+    display: inline-block;;    /* Faz a caixinha abraçar apenas o tamanho do texto */
+    text-align: center;
+    margin: 0 auto 20px auto;  /* Centraliza e joga um espaço para baixo */
+}
+
+.container-hijack .jumpscare-hijack:hover {
+  background-color: #721009; /* Escurece um pouco o verde quando o mouse passa por cima */
+  transform: scale(1.05);
 }
