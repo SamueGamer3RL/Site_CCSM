@@ -1,0 +1,37 @@
+head = cabeça do site, parte oculta do site em que fica armazenado a parte de cima, como por exemplo: "Wiki-DoorsInformation" na parte de aba do site.
+
+header = parte acima do budy (ou dentro se prefirir), que armazena partes iniciais do site.
+
+div = é como uma caixinha que pode guardar, containers(caixas que podem conter varias informações como imagens, paragrafos, listas, ect...), agrupando as informações.
+
+nav = utilizada junto ao div para gerar as opções de seleção para uma aba por exemplo: Inicio|Wiki|Contato além da logo. 
+
+body = corpo do site local onde se monta a estrutura principal que compõe o site por inteiro.
+
+h1, h2, h3... = parte iniciais do corpo, geralmente formadas por títulos/subtitulos.
+
+p = paragrafo
+
+li = lista
+
+span = local para separar uma classe para uma palavra especifica de um h1,p,a,etc..., podendo configurar a palavra individualmente.
+
+class = atribui uma palavra-expressão á uma parte do comando, podendo chama-la/alterala no css.
+
+id = funcionando como o class, mas sendo único, para todo o resto do html/css.
+
+alt = descrição ao passar o mouse por alguma parte específica.
+
+a = utilizado para direcionar para outro local, seja link/imagem/arquivo
+
+href"" = referencia um link/imagem/arquivo que você queira.
+
+button = criar um botão para o site.
+
+img = utilizar uma imagem.
+
+<script></script> = finalizar o body.
+
+footer = utilizado para fazer a parte abaixo do site, como rodapé.
+
+
