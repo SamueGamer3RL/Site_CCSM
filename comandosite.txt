@@ -34,4 +34,10 @@ img = utilizar uma imagem.
 
 footer = utilizado para fazer a parte abaixo do site, como rodapé.
 
+svg = formato de link que "chama", uma imagem ou algo de outro site, e cria ele ali.
+
+ul = é uma lista não ordenada, em que a ordem não faz diferença
+
+
+
 
